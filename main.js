@@ -12,7 +12,7 @@ scene.add(light);
 
 // Load the GLTF model
 const loader = new THREE.GLTFLoader();
-loader.load('../model/model.gltf', function (gltf) {
+loader.load('model/model.gltf', function (gltf) {
     scene.add(gltf.scene);
     animate();
 }, undefined, function (error) {
